@@ -1,6 +1,7 @@
 name: Ask a question
 description: Get help using or setting up Undo.
 title: "Question: "
+labels: [question, needs-triage]
 body:
   - type: markdown
     attributes:

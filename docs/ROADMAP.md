@@ -1,15 +1,15 @@
 # Known limitations and next work
 
-This is a development roadmap, not a promised schedule. Items here are not yet GitHub issues unless linked after publication.
+This is a development roadmap, not a promised schedule. The seven release-validation workstreams are tracked in [GitHub Issues](https://github.com/rahulcv1003/undo-youtube-classic-layout/issues).
 
 ## Before public release
 
-- Validate the complete installed 0.1.3 build in Chrome after extension reload, including refresh, next-video navigation, theater entry/exit, miniplayer expansion and on/off transitions. Existing player-mode evidence used temporary development-code injection.
+- Validate the complete installed 0.1.4 build in Chrome after extension reload, including refresh, next-video navigation, theater entry/exit, miniplayer expansion and on/off transitions. Existing player-mode evidence used temporary development-code injection. [Issue 1](https://github.com/rahulcv1003/undo-youtube-classic-layout/issues/1).
 - Confirm actual fullscreen entry/exit manually; a changed label or simulated click is not sufficient evidence.
 - Cover playlists, live streams/chat, premieres, disabled comments, chapters/transcript, restricted videos and native interactions across relevant layouts.
 - Complete responsive-width, zoom, RTL and real keyboard/screen-reader checks.
 - Run browser/extension compatibility checks and actual performance measurements: startup application time, repeated LCP samples, observer cost, 50-navigation memory stability and idle-worker behaviour.
-- Publish the source repository and activate/test the Issue Forms; configure and verify the extension's final report link.
+- Source publication, hosted Issue Forms and the 0.1.4 report destination are complete. Maintain the forms and preserve the reviewed diagnostic allowlist; validate the complete reloaded build as part of issue 1.
 - Review screenshots, listing assets, privacy disclosure, clean-checkout packaging and Chrome Web Store submission separately. Repository publication is not a store release.
 - If remote selector hosting is enabled later, test the actual packaged-extension network/CORS path first. Keep the endpoint disabled until then.
 

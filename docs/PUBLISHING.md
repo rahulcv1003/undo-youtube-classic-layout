@@ -2,11 +2,15 @@
 
 ## Current state
 
-Local source, Issue Forms and documentation are prepared. No remote repository, push or live form has been verified. The browser is awaiting GitHub sign-in. The GitHub integration is installed, but this session has not exposed an authenticated publishing route. Do not claim publication based on these local files.
+The public [repository](https://github.com/rahulcv1003/undo-youtube-classic-layout), reviewed source and [Issue Forms](https://github.com/rahulcv1003/undo-youtube-classic-layout/issues/new/choose) are published. The user explicitly approved public visibility. Hosted bug-form diagnostic prefill was verified using synthetic details, without submitting a dummy report. Version 0.1.4 connects the extension to this destination. No Chrome Web Store release is implied.
+
+The first source publication was commit `c83d32a314eab0c466878657d6f09af6173afb86`; its [GitHub Actions run](https://github.com/rahulcv1003/undo-youtube-classic-layout/actions/runs/38569650413) completed successfully. A follow-up documentation/form-label commit records the completed setup and refreshed synthetic UI screenshots. Check the latest Actions run separately after any later commit.
+
+Publication used the authenticated GitHub connector's blob/tree/commit APIs and a non-forced main-branch update from the verified initial commit. The local repository fetched the published commit and its staged tree matched it. A working GitHub CLI credential was not created; future terminal pushes may require normal Git authentication even though the connector can publish changes.
 
 ## Choose destination
 
-The requested scope now includes the extension's source code, not only a support hub. Suggested repository name: `undo-youtube-classic-layout`. Confirm the owning account/organisation and visibility. A public repository allows community reports but makes source, history and issue attachments public. A private repository limits reports to people with access. Do not change a private repository to public without explicit approval.
+The chosen destination is `rahulcv1003/undo-youtube-classic-layout`, public. It includes extension source, not only a support hub. Public visibility makes source, history and submitted issue attachments public. Do not transfer ownership, expand access or change another repository's visibility without explicit approval.
 
 ## Review publication contents
 

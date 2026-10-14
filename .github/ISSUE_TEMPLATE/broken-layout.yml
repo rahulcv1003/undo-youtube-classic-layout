@@ -1,6 +1,7 @@
 name: Report a broken layout
 description: Tell us which part of the watch-page layout is broken.
 title: "Broken layout: "
+labels: [bug, needs-triage]
 body:
   - type: markdown
     attributes:

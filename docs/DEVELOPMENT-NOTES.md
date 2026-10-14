@@ -2,7 +2,7 @@
 
 ## Objective
 
-Restore a familiar desktop watch page without replacing native video playback, description, comments or recommendations. Keep controls simple, permissions narrow and changes reversible. The current version is 0.1.3, not a store-ready release.
+Restore a familiar desktop watch page without replacing native video playback, description, comments or recommendations. Keep controls simple, permissions narrow and changes reversible. The current version is 0.1.4, not a store-ready release.
 
 ## 0.1.0 — restoration foundation
 
@@ -43,7 +43,11 @@ The repository now has an indexed documentation set, changelog, contribution gui
 
 Private/local inputs are excluded from version control: dependencies, output ZIPs/builds, test artifacts, environment files, key files, the local product brief and live browser captures. Sanitised fixtures and generated extension-only screenshots can be reviewed for publication separately from personal browser captures.
 
-GitHub repository creation, code push, live form activation and the final in-extension report URL are not yet verified. No owner/repository URL has been invented or inserted into the build. GitHub authentication and destination visibility must be resolved first.
+The user approved public source and forms. The repository was created under the verified `rahulcv1003` account and reviewed files were published using the authenticated GitHub connector. Its commit was fetched into the local checkout, whose staged tree matched the published tree. No browser cookies or tokens were transferred into Git credentials.
+
+Version 0.1.4 configures the verified GitHub report/homepage links. The hosted chooser displayed all three forms; the bug form accepted synthetic privacy-safe diagnostic prefill without a submitted test issue. Seven real pending-work issues were created with acceptance criteria. Category and status labels support triage. Source/publication history starts on 14 October 2026; earlier version notes describe development work, not fabricated historical Git commits.
+
+The first published source commit passed GitHub Actions on Linux. Local 0.1.4 checks passed 71 unit and 16 isolated Edge integration tests, including the configured report URL and privacy assertions. Selector hosting, store release, email and uninstall endpoints remain disabled. See [publication status](PUBLISHING.md) for evidence and remaining checks.
 
 ## Maintenance rules
 

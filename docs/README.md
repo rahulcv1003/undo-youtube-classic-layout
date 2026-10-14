@@ -27,4 +27,4 @@ Undo is a development-stage Chrome/Edge extension that restores the classic desk
 - [GitHub repository and Issue Forms setup](GITHUB-SUPPORT-SETUP.md)
 - [Publication runbook](PUBLISHING.md)
 
-GitHub publication and the hosted error forms are not yet verified. The local documentation and form files are prepared; see the publication runbook for the remaining steps. Historical notes distinguish fixture passes, live development-code tests and installed-build checks. None of those should be treated as equivalent evidence.
+The [source repository](https://github.com/rahulcv1003/undo-youtube-classic-layout) and [hosted forms](https://github.com/rahulcv1003/undo-youtube-classic-layout/issues/new/choose) are public. The error-form diagnostic prefill was checked in Chrome without submitting a dummy report. Historical notes distinguish fixture passes, live development-code tests and installed-build checks. None of those should be treated as equivalent evidence.

@@ -1,5 +1,9 @@
 # Test results
 
+## 0.1.4 GitHub reporting and publication
+
+71 unit tests and 16 isolated Edge integration tests pass locally, along with types, lint, build/security and formatting checks. The report integration asserts the verified GitHub destination, bug template and exact diagnostic query prefill, excluding the private video identifier and page data. All three hosted forms were observed in Chrome; the bug form displayed safe synthetic prefilled diagnostics without a submitted test report. First source-publication commit `c83d32a314eab0c466878657d6f09af6173afb86` passed GitHub Actions on Linux in run `38569650413`. Complete installed-build/player-mode validation remains tracked separately.
+
 ## 0.1.3 player-mode repair
 
 71 unit tests and 16 isolated Edge integration tests pass, along with strict TypeScript, lint and build/security checks. Live development-code testing in the owner's Chrome verified theater entry/exit and native miniplayer entry/expansion. See [player-mode evidence and limitations](PLAYER-MODES.md). Installed 0.1.3 refresh verification and actual fullscreen are not yet marked passed.

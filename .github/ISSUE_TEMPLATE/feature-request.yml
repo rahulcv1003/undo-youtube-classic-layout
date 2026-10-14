@@ -1,6 +1,7 @@
 name: Suggest an improvement
 description: Propose an improvement to Undo's classic watch-page experience.
 title: "Suggestion: "
+labels: [enhancement, needs-triage]
 body:
   - type: markdown
     attributes:
