@@ -1,0 +1,101 @@
+{
+  "defaultViewButton": { "message": "Default view (t)" },
+  "theaterModeButton": { "message": "Theater mode (t)" },
+  "miniplayerButton": { "message": "Miniplayer (i)" },
+  "extName": { "message": "Undo: Classic Layout for YouTube" },
+  "extShortName": { "message": "Undo" },
+  "extDescription": {
+    "message": "Move comments and description below the video and recommendations to the right. Restore the classic YouTube layout."
+  },
+  "actionTitle": { "message": "Undo: Classic layout" },
+  "commandToggle": { "message": "Toggle Classic layout" },
+  "classicLayout": { "message": "Classic layout" },
+  "options": { "message": "Options" },
+  "optionsIntro": {
+    "message": "Choose how restored video pages behave. Changes apply as you make them."
+  },
+  "broken": { "message": "Something looks broken" },
+  "showComments": { "message": "Show comments" },
+  "statusRestored": {
+    "message": "This page had the new layout. Classic layout restored."
+  },
+  "statusClassic": {
+    "message": "This page already uses the classic layout. Nothing to change."
+  },
+  "statusOther": { "message": "Open a YouTube video to use this." },
+  "statusUnavailable": {
+    "message": "This works on YouTube video pages. If a video is already open, reload it once."
+  },
+  "statusUnknown": {
+    "message": "YouTube changed something we don't recognise yet. Nothing was changed on this page."
+  },
+  "statusOff": {
+    "message": "Classic layout is off. YouTube is showing its own layout."
+  },
+  "statusPaused": {
+    "message": "Restoration is paused while a layout fix is prepared."
+  },
+  "statusLoading": { "message": "Checking this page…" },
+  "alreadyClassicInfo": { "message": "Only pages with the new layout change." },
+  "hideAi": { "message": "Hide YouTube's AI features" },
+  "hideAiHelp": {
+    "message": "Hide Ask and AI entry points on restored video pages. Normal search stays available."
+  },
+  "spoilerShield": { "message": "Spoiler shield" },
+  "spoilerHelp": {
+    "message": "Keep comments behind Show comments. Once opened, they stay open for this browser session."
+  },
+  "playerWidth": { "message": "Player width on wide screens" },
+  "widthHelp": {
+    "message": "Applies above 1920 pixels, outside theater and fullscreen modes."
+  },
+  "widthDefault": { "message": "YouTube default" },
+  "widthFill": { "message": "Fill the width" },
+  "widthCap": { "message": "Cap at a readable width" },
+  "optionsOff": {
+    "message": "Turn on Classic layout in the toolbar popup to use these options."
+  },
+  "featureUnavailable": {
+    "message": "This option is temporarily unavailable while a fix is prepared."
+  },
+  "saved": { "message": "Saved. Open video pages update automatically." },
+  "saveFailed": { "message": "The change could not be saved. Try again." },
+  "welcomeTitle": { "message": "The familiar layout, back in place." },
+  "welcomeBody": {
+    "message": "Undo puts comments and description below the player and recommendations on the right when YouTube shows the new layout."
+  },
+  "welcomeClassic": {
+    "message": "Already have the classic layout? Undo leaves it as it is."
+  },
+  "welcomeSwitch": {
+    "message": "Use Classic layout in the toolbar popup to switch it off at any time. Alt+Shift+Y also toggles it."
+  },
+  "openOptions": { "message": "Open options" },
+  "privacyLine": {
+    "message": "No account, tracking or analytics. Settings stay in your browser profile."
+  },
+  "notAffiliated": { "message": "Not affiliated with YouTube or Google." },
+  "devNotice": {
+    "message": "Development build. Live layout and compatibility checks are still in progress."
+  },
+  "reportTitle": { "message": "Report a broken layout" },
+  "reportPrivacy": {
+    "message": "These are the exact technical details included in your report. No video URL, title, account information or page content is included. Nothing is sent automatically."
+  },
+  "reportGithub": { "message": "Review report on GitHub" },
+  "reportEmail": { "message": "Report by email" },
+  "reportNotConfigured": {
+    "message": "Report destinations will be connected when the public repository is ready. You can copy these details for now."
+  },
+  "copyDetails": { "message": "Copy report details" },
+  "copied": { "message": "Report details copied." },
+  "copyFailed": {
+    "message": "Select the report details and copy them manually."
+  },
+  "dismiss": { "message": "Dismiss" },
+  "rating": {
+    "message": "If this saved your YouTube, a rating helps others find it."
+  },
+  "rate": { "message": "Leave a rating" },
+  "back": { "message": "Back" }
+}

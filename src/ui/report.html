@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Undo</title>
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="report.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="brand" data-i18n="extShortName"></div>
+      <h1 data-i18n="reportTitle"></h1>
+      <p data-i18n="reportPrivacy"></p>
+      <textarea
+        id="details"
+        rows="12"
+        readonly
+        data-i18n-label="reportTitle"
+        aria-label="Report details"
+      ></textarea>
+      <p>
+        <button id="copy" class="text-button" data-i18n="copyDetails"></button>
+      </p>
+      <p id="result" role="status"></p>
+      <p
+        id="unconfigured"
+        class="notice"
+        data-i18n="reportNotConfigured"
+        hidden
+      ></p>
+      <p class="links">
+        <a id="issue" class="primary" data-i18n="reportGithub" hidden></a
+        ><a id="email" data-i18n="reportEmail" hidden></a>
+      </p>
+    </main>
+    <script type="module" src="report.js"></script>
+  </body>
+</html>

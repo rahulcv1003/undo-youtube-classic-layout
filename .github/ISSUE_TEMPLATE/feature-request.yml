@@ -1,0 +1,31 @@
+name: Suggest an improvement
+description: Propose an improvement to Undo's classic watch-page experience.
+title: "Suggestion: "
+body:
+  - type: markdown
+    attributes:
+      value: Search existing requests first. This is a public discussion; do not include personal or account information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the experience you want to improve, rather than only a proposed button or setting.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds (optional)
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked for similar requests and removed personal information.
+          required: true

@@ -1,0 +1,24 @@
+name: Ask a question
+description: Get help using or setting up Undo.
+title: "Question: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Never share passwords, cookies, account details or browsing history.
+        For a broken layout or player control, use the broken-layout form instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Undo version
+      description: Find this in the extension's popup or Chrome's extensions page.
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried? (optional)

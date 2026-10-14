@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-14.1",
+  "killSwitch": {
+    "site": false,
+    "features": {
+      "restoreLayout": false,
+      "hideAiSearch": false,
+      "spoilerShield": false,
+      "playerWidth": false
+    },
+    "message": ""
+  },
+  "detection": {
+    "watchPageRoot": "ytd-watch-flexy",
+    "newLayoutSignals": {
+      "requireAll": [
+        "ytd-watch-flexy[fixed-default-panels][side-rail-dismissible-panels]",
+        "ytd-watch-flexy #primary #related ytd-watch-next-secondary-results-renderer",
+        "ytd-watch-flexy #secondary #panels [target-id='engagement-panel-comments-section'] ytd-comments[engagement-panel]"
+      ],
+      "requireAny": ["ytd-watch-flexy #fixed-side-menu yt-side-rail-view-model"]
+    },
+    "classicLayoutSignals": {
+      "requireAll": [
+        "ytd-watch-flexy:not([fixed-default-panels]):not([side-rail-dismissible-panels])",
+        "ytd-watch-flexy #secondary-inner > #related ytd-watch-next-secondary-results-renderer",
+        "ytd-watch-flexy #primary ytd-comments#comments:not([hidden])"
+      ],
+      "requireAny": []
+    }
+  },
+  "containers": {
+    "columns": "#columns",
+    "flatten": "#primary, #primary-inner, #below, #below > div:not([id]), #secondary, #secondary-inner, #secondary-inner > #panels",
+    "player": "#primary-inner > #player",
+    "metadata": "#below ytd-watch-metadata",
+    "recommendations": "#primary #related:has(> ytd-watch-next-secondary-results-renderer)",
+    "recommendationItems": "ytd-watch-next-secondary-results-renderer ytd-item-section-renderer > #contents",
+    "recommendationCard": "yt-lockup-view-model > .ytLockupViewModelHost",
+    "recommendationImage": ".ytLockupViewModelContentImage",
+    "recommendationDetails": ".ytLockupViewModelMetadata",
+    "commentsPanel": "#secondary-inner > #panels > [target-id='engagement-panel-comments-section']",
+    "descriptionPanel": "#secondary-inner > #panels > [target-id='engagement-panel-structured-description']",
+    "panelContent": "#content, #contents, ytd-section-list-renderer",
+    "panelHeader": "#header, #footer",
+    "otherPanels": "#secondary-inner > #panels > ytd-engagement-panel-section-list-renderer:not([target-id='engagement-panel-comments-section']):not([target-id='engagement-panel-structured-description'])",
+    "playlistPanel": "#secondary-inner > ytd-playlist-panel-renderer:not([hidden])",
+    "liveChat": "#secondary-inner > #chat-container",
+    "sideRail": "#fixed-side-menu",
+    "splitSpacer": "#secondary-split-scroll-spacer",
+    "aiSearchEntry": ".you-chat-entrypoint-button, [target-id='you-chat-entrypoint-button'], [target-id='PAyouchat'], yt-side-rail-view-model button[aria-label^='Ask,']",
+    "comments": "ytd-comments#comments",
+    "shieldHost": "#below",
+    "secondaryHost": "#secondary-inner",
+    "belowHost": "#below"
+  },
+  "experimentFlags": {
+    "newLayout": [
+      "web_watch_fixed_default_panels",
+      "web_fixed_panel_watch_next_grid_swap",
+      "web_watch_split_scroll",
+      "web_side_rail_dismissible_panels"
+    ]
+  },
+  "navigationEvents": ["yt-navigate-finish", "yt-page-data-updated"],
+  "restore": {
+    "rootAttributes": [
+      "fixed-default-panels",
+      "side-rail-dismissible-panels",
+      "split-scroll",
+      "using-fixed-panel",
+      "show-fixed-side-menu"
+    ],
+    "metadataAttributes": [
+      "hide-description",
+      "enable-top-right-watch-metadata",
+      "enable-single-line-title-metadata",
+      "enable-sd-ep-open-on-title-click"
+    ],
+    "commentsVisibilityAttribute": "visibility",
+    "commentsVisibilityValue": "ENGAGEMENT_PANEL_VISIBILITY_EXPANDED"
+  }
+}

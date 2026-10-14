@@ -1,0 +1,16 @@
+node_modules/
+dist/
+artifacts/
+playwright-report/
+test-results/
+*.local.*
+.env*
+
+# Local product brief and browser captures are not publication assets.
+/undo-youtube-classic-layout-PRD.md
+/new-layout-2026-10-14.png
+/docs/screenshots/live-*
+*.pem
+*.key
+*.p12
+*.pfx

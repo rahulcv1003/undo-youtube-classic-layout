@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Undo</title>
+    <link rel="stylesheet" href="tokens.css" />
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M9 5 3 11l6 6M4 11h10a6 6 0 0 1 0 12"
+            transform="translate(0 -3)"
+            stroke="currentColor"
+            stroke-width="2"
+          /></svg
+        ><span data-i18n="extShortName"></span>
+      </div>
+      <h1 data-i18n="options"></h1>
+      <p class="options-intro muted" data-i18n="optionsIntro"></p>
+      <p id="off" class="notice" data-i18n="optionsOff" hidden></p>
+      <form>
+        <fieldset id="settings" disabled>
+          <legend class="sr-only" data-i18n="options"></legend>
+          <div class="field">
+            <label
+              ><input
+                id="hideAiSearch"
+                type="checkbox"
+                aria-describedby="ai-help" /><span data-i18n="hideAi"></span
+            ></label>
+            <p id="ai-help" class="muted" data-i18n="hideAiHelp"></p>
+            <p
+              id="hideAiSearch-unavailable"
+              data-i18n="featureUnavailable"
+              hidden
+            ></p>
+          </div>
+          <div class="field">
+            <label
+              ><input
+                id="spoilerShield"
+                type="checkbox"
+                aria-describedby="spoiler-help" /><span
+                data-i18n="spoilerShield"
+              ></span
+            ></label>
+            <p id="spoiler-help" class="muted" data-i18n="spoilerHelp"></p>
+            <p
+              id="spoilerShield-unavailable"
+              data-i18n="featureUnavailable"
+              hidden
+            ></p>
+          </div>
+          <div class="field">
+            <label for="playerWidth" data-i18n="playerWidth"></label>
+            <p id="width-help" class="muted" data-i18n="widthHelp"></p>
+            <select id="playerWidth" aria-describedby="width-help">
+              <option value="default" data-i18n="widthDefault"></option>
+              <option value="fill" data-i18n="widthFill"></option>
+              <option value="cap" data-i18n="widthCap"></option>
+            </select>
+            <p
+              id="playerWidth-unavailable"
+              data-i18n="featureUnavailable"
+              hidden
+            ></p>
+          </div>
+        </fieldset>
+      </form>
+      <p id="saved" role="status" aria-live="polite"></p>
+      <p class="notice" data-i18n="alreadyClassicInfo"></p>
+      <footer>
+        <p data-i18n="privacyLine"></p>
+        <p data-i18n="notAffiliated"></p>
+      </footer>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

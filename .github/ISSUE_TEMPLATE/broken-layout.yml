@@ -1,0 +1,84 @@
+name: Report a broken layout
+description: Tell us which part of the watch-page layout is broken.
+title: "Broken layout: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first. Reports in a public repository are public.
+        Do not include passwords, cookies, account details, browsing history, or personal information.
+        Crop screenshots to the problem area and hide account details.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Layout or recommendations
+        - Refresh or switching videos
+        - Theater mode
+        - Miniplayer
+        - Fullscreen
+        - Comments or description
+        - Playlist or live chat
+        - Extension popup or settings
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Technical details from Undo
+      description: Copy the details from Undo's Report a problem page. If it cannot open, write "Unavailable" and give the extension/browser version. Review before submitting; do not add video URLs, account information or cookies.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong?
+      description: Describe the layout problem without personal information.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the actions needed to see the problem. No video URL is required.
+      placeholder: |
+        1. Open a normal video.
+        2. Enable Classic layout.
+        3. Click the theater button.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Once so far
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Does it happen with Undo switched off?
+      description: If practical, switch Undo off and refresh, then compare. Mention other YouTube extensions only if relevant; do not share a full browser-extension inventory.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recording (optional)
+      description: Review and crop attachments before uploading. Hide account menus, avatars, notifications and unrelated tabs.
+  - type: checkboxes
+    id: review
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked for duplicate reports and removed personal information from my report and attachments.
+          required: true

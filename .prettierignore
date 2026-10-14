@@ -1,0 +1,6 @@
+node_modules
+dist
+artifacts
+package-lock.json
+undo-youtube-classic-layout-PRD.md
+tests/fixtures
